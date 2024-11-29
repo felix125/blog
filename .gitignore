@@ -2,5 +2,4 @@ _site/
 .bundle/vendor
 .bak/
 Gemfile.lock
-yarn.lock
 node_modules/

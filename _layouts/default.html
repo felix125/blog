@@ -1,0 +1,22 @@
+---
+layout: basic
+---
+
+<header class="py-10 container mx-auto lg:max-w-3xl">
+  {% include nav.html %}
+  <hr />
+</header>
+
+<main class="mb-8 animate-fade-in-fast">
+  {{ content }}
+</main>
+<footer class="container pb-10 mx-auto lg:max-w-3xl">
+  <hr />
+  {% if page.lang == 'zh' %}
+  <p class="pt-5">由 <span class="font-bold transition duration-300 hover:text-blue-800">{{ site.data.zh.title.main }}</span> 用 ❤️ 製作 • {{ site.time | date: '%Y' }}</p>
+    <p>自由分享，廣為流傳 🌱</p>
+  {% else %}
+    <p class="pt-5">Made with ❤️ by <span class="font-bold transition duration-300 hover:text-blue-500">{{ site.data.en.title.main }}</span> • {{ site.time | date: '%Y' }}</p>
+    <p>Share freely, spread widely 🌱</p>
+  {% endif %}
+</footer>

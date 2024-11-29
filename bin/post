@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+# 獲取當前程式文件所在的目錄
+current_directory = File.dirname(File.expand_path(__FILE__))
+
+# 檢查是否提供了標題
+if ARGV.empty?
+  puts "請提供文章標題"
+  exit
+end
+
+# 設置變量
+title = ARGV.join(" ")
+date = Date.today.to_s
+filename = "#{date}-#{title.gsub(' ', '-')}.md"
+filepath = File.join(current_directory, "../_posts/#{filename}")
+
+# 創建文章文件並寫入內容
+content = <<-CONTENT
+---
+title: "#{title}"
+date: #{date}
+layout: default
+---
+CONTENT
+
+File.open(filepath, 'w') { |file| file.write(content) }
+
+puts "已創建文章文件: #{filename}"
+

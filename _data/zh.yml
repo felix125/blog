@@ -1,0 +1,13 @@
+title: 
+  main: "請君側耳聽"
+  subtitle: 
+description: "在這個部落格，將分享橫跨生活、心靈、文學、療癒、科學、經濟學等多元領域的個人思考和經歷。"
+keywords: "日記, 生活記事, 心靈探索, 文學, 科學, 哲學, 醫學, 社會學"
+nav:
+  home: "首頁"
+  about: "關於"
+  alternative_home: "en"
+post:
+  author: "作者"
+  date: "發布日期"
+  date_format: "%Y-%m-%d"

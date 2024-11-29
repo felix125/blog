@@ -1,0 +1,14 @@
+title:
+  main: "Lend Me Your Ear"
+  subtitle:
+description: "A blog sharing personal reflections on life, mindfulness, literature, healing, science, and economics."
+keywords: "Diary, life journal, mindfulness, literature, science, philosophy, medicine, sociology"
+author: "Felix Chang"
+nav:
+  home: "Home"
+  about: "About"
+  alternative_home: "zh"
+post:
+  author: "Author"
+  date: "Published on"
+  date_format: "%B %d, %Y"

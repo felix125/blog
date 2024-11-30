@@ -7,7 +7,7 @@
      "headline": "{{ page.title }}",
      "author": {
          "@type": "Person",
-         "name": "{{ site.author }}"
+         "name": "{{ page.author | default: site.data.en.author }}"
      },
      "datePublished": "{{ page.date | date_to_xmlschema }}",
      "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 }}",

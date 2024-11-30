@@ -1,7 +1,11 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ site.url }}/assets/img/shares/posts/{{ page.lang }}/{{ page.name |replace: '.md', '-share.png'}}">
+{% if page.layout == 'post' %}
+    <meta property="og:image" content="{{ site.url }}/assets/img/shares/posts/{{ page.lang }}/{{ page.name |replace: '.md', '-share.png'}}">
+{% else %}
+    <meta property="og:image" content="{{ page.og_image }}">
+{% endif %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="article">
 

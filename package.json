@@ -10,10 +10,12 @@
     "concurrently": "^9.0.1"
   },
   "scripts": {
-    "jekyll": "bundle exec jekyll serve --host=0.0.0.0 --port=5000 --livereload-port=9999",
+    "jekyll": "bundle exec jekyll serve --host=0.0.0.0 --port=3333 --livereload-port=9998",
     "tailwind": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css --watch",
     "build:css": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css",
     "post": "node scripts/post.js",
+    "post:zh": "node scripts/post.js zh",
+    "post:en": "node scripts/post.js en",
     "share-image": "node scripts/generate-shares.js",
     "start": "concurrently \"yarn run jekyll\" \"yarn run tailwind\" \"yarn run share-image\""
   }

@@ -4,7 +4,7 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
 <!-- SEO: 基本 meta 資訊 -->
-<meta name="author" content="{{ page.author }}">
+<meta name="author" content="{{ page.author | default: site.data.en.author }}">
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
 <meta name="robots" content="index, follow">
